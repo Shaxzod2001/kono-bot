@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
             item.className = 'movie-item';
             item.innerHTML = `<span class="movie-item-number">#${number}</span> Kino`; // Nomini keyinroq qo'shish mumkin
             item.onclick = () => {
+                alert('Tugma bosildi! Botga yuborilayotgan raqam: ' + number);
                 if (tg.initDataUnsafe.user) { // Faqat telegram ichida bosilsa
                     tg.sendData(number); // Botga kino raqamini yuborish
                 }
